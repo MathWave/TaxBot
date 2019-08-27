@@ -133,6 +133,6 @@ def send_text(message):
 
 if __name__ == '__main__':
     bot.send_message(84367486, "Hello world")
-    bot.polling(none_stop=True)
+    #bot.polling(none_stop=True)
 
 
