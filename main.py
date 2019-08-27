@@ -83,7 +83,7 @@ def govno(id):
                 "\nЕсли Вы нанимаете сотрудников, то Вы также должны заплатить " + str(TaxForSlaves(int(data[id][31])))
     return line
 
-@bot.message_handler(content_types=['text'])
+#@bot.message_handler(content_types=['text'])
 def send_text(message):
     id = message.chat.id
     if id not in number.keys():
@@ -132,6 +132,7 @@ def send_text(message):
     number[id] += 1
 
 if __name__ == '__main__':
+    bot.send_message(84367486, "Hello world")
     bot.polling(none_stop=True)
 
 
