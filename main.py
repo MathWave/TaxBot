@@ -132,6 +132,7 @@ def send_text(message):
     number[id] += 1
 
 if __name__ == '__main__':
+    print("ffff")
     bot.send_message(84367486, "Hello world")
     #bot.polling(none_stop=True)
 
